@@ -57,7 +57,7 @@ const Skills = () => {
     >
       <div className="section">
         <AnimatedWrapper>
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 section-divider">
             <SectionHeading
               heading="Technical Skills"
               secondHeading="Technologies and tools I'm passionate about working with"

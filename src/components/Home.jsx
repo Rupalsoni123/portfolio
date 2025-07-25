@@ -46,7 +46,7 @@ const Home = () => {
         <div className="pl-2 xs:pl-8 flex flex-col gap-4 justify-center text-gray-800 dark:text-gray-200 w-max md:w-3/5">
           <AnimatedWrapper delay={0.2}>
             <div className="space-y-2">
-              <p className="text-xl xs:text-2xl font-medium text-pink-600 dark:text-pink-400 tracking-wide">
+              <p className="text-2xl xs:text-3xl font-medium text-pink-600 dark:text-pink-400 tracking-wide">
                 Hello, I'm
               </p>
               <h1 className="text-5xl xs:text-6xl lg:text-7xl font-bold leading-tight">
@@ -59,7 +59,7 @@ const Home = () => {
           </AnimatedWrapper>
           
           <AnimatedWrapper delay={0.35}>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <p className="text-xl xs:text-2xl font-semibold text-gray-700 dark:text-gray-300">
                 Jr. DevOps Engineer
               </p>

@@ -376,6 +376,26 @@
     to { transform: rotate(360deg); }
   }
   
+  /* Section divider line */
+  .section-divider {
+    position: relative;
+  }
+  
+  .section-divider::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.3) 20%, rgba(139, 92, 246, 0.5) 50%, rgba(236, 72, 153, 0.3) 80%, transparent 100%);
+  }
+  
+  .dark .section-divider::after {
+    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.3) 20%, rgba(244, 114, 182, 0.5) 50%, rgba(192, 132, 252, 0.3) 80%, transparent 100%);
+  }
+  
   /* Skills filter horizontal layout */
   .skills-filter {
     display: flex;

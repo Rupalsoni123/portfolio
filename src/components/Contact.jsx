@@ -69,7 +69,7 @@ const Contact = () => {
     >
       <div className="section">
         <AnimatedWrapper>
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 section-divider">
             <SectionHeading
               heading="Let's Connect"
               secondHeading="I'd love to hear from you. Send me a message and I'll respond as soon as possible."
@@ -114,11 +114,11 @@ const Contact = () => {
           </AnimatedWrapper>
         )}
         
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Contact Information */}
           <AnimatedWrapper animateFrom="left">
-            <div className="space-y-8">
-              <div className="content-card">
+            <div className="h-full flex flex-col">
+              <div className="content-card flex-1">
                 <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text mb-6">
                   Get In Touch
                 </h3>
@@ -126,7 +126,7 @@ const Contact = () => {
                   I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply connect with fellow tech enthusiasts. Whether you have a question about DevOps, want to discuss a potential collaboration, or just want to say hello, I'd love to hear from you!
                 </p>
                 
-                <div className="space-y-6">
+                <div className="space-y-6 flex-1">
                   <div className="flex items-center gap-4 p-4 bg-pink-50 dark:bg-gray-700 rounded-xl">
                     <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center">
                       <GMail className="text-white" />
@@ -173,123 +173,125 @@ const Contact = () => {
 
           {/* Contact Form */}
           <AnimatedWrapper animateFrom="right">
-            <div className="content-card">
-              <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text mb-6">
-                Send Message
-              </h3>
-              
-              <form
-                onSubmit={handleSubmit}
-                className="space-y-6"
-                aria-label="Contact form"
-                noValidate
-              >
-                <AnimatedWrapper delay={0.1}>
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                      Your Name *
-                    </label>
-                    <div className="relative">
-                      <input
-                        id="name"
-                        type="text"
-                        name="name"
-                        placeholder="Enter your full name"
-                        className={`form-input pl-12 ${
-                          errData.nameError !== "" ? "border-red-400 focus:border-red-400" : "border-pink-200 dark:border-purple-600 focus:border-pink-400 dark:focus:border-purple-400"
-                        }`}
-                        value={formData.name}
-                        onChange={handleChange}
-                        aria-required="true"
-                        aria-invalid={errData.nameError !== ""}
-                        aria-describedby={errData.nameError ? "name-error" : undefined}
-                        disabled={isSubmitting}
-                      />
-                      <FormIcon name="person" />
-                    </div>
-                    <ErrorBox message={errData.nameError} id="name-error" />
-                  </div>
-                </AnimatedWrapper>
+            <div className="h-full flex flex-col">
+              <div className="content-card flex-1">
+                <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text mb-6">
+                  Send Message
+                </h3>
                 
-                <AnimatedWrapper delay={0.2}>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                      Email Address *
-                    </label>
-                    <div className="relative">
-                      <input
-                        id="email"
-                        type="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                        className={`form-input pl-12 ${
-                          errData.emailError !== "" ? "border-red-400 focus:border-red-400" : "border-pink-200 dark:border-purple-600 focus:border-pink-400 dark:focus:border-purple-400"
-                        }`}
-                        value={formData.email}
-                        onChange={handleChange}
-                        aria-required="true"
-                        aria-invalid={errData.emailError !== ""}
-                        aria-describedby={errData.emailError ? "email-error" : undefined}
-                        disabled={isSubmitting}
-                      />
-                      <FormIcon name="gmail" />
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-6 flex-1 flex flex-col"
+                  aria-label="Contact form"
+                  noValidate
+                >
+                  <AnimatedWrapper delay={0.1}>
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                        Your Name *
+                      </label>
+                      <div className="relative">
+                        <input
+                          id="name"
+                          type="text"
+                          name="name"
+                          placeholder="Enter your full name"
+                          className={`form-input pl-12 ${
+                            errData.nameError !== "" ? "border-red-400 focus:border-red-400" : "border-pink-200 dark:border-purple-600 focus:border-pink-400 dark:focus:border-purple-400"
+                          }`}
+                          value={formData.name}
+                          onChange={handleChange}
+                          aria-required="true"
+                          aria-invalid={errData.nameError !== ""}
+                          aria-describedby={errData.nameError ? "name-error" : undefined}
+                          disabled={isSubmitting}
+                        />
+                        <FormIcon name="person" />
+                      </div>
+                      <ErrorBox message={errData.nameError} id="name-error" />
                     </div>
-                    <ErrorBox message={errData.emailError} id="email-error" />
-                  </div>
-                </AnimatedWrapper>
-
-                <AnimatedWrapper delay={0.3}>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                      Your Message *
-                    </label>
-                    <div className="relative">
-                      <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Tell me about your project, question, or just say hello..."
-                        rows="6"
-                        className={`form-input pl-12 resize-none ${
-                          errData.messageError !== "" ? "border-red-400 focus:border-red-400" : "border-pink-200 dark:border-purple-600 focus:border-pink-400 dark:focus:border-purple-400"
-                        }`}
-                        value={formData.message}
-                        onChange={handleChange}
-                        aria-required="true"
-                        aria-invalid={errData.messageError !== ""}
-                        aria-describedby={errData.messageError ? "message-error" : undefined}
-                        disabled={isSubmitting}
-                      />
-                      <FormIcon name="chat" />
+                  </AnimatedWrapper>
+                  
+                  <AnimatedWrapper delay={0.2}>
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                        Email Address *
+                      </label>
+                      <div className="relative">
+                        <input
+                          id="email"
+                          type="email"
+                          name="email"
+                          placeholder="Enter your email address"
+                          className={`form-input pl-12 ${
+                            errData.emailError !== "" ? "border-red-400 focus:border-red-400" : "border-pink-200 dark:border-purple-600 focus:border-pink-400 dark:focus:border-purple-400"
+                          }`}
+                          value={formData.email}
+                          onChange={handleChange}
+                          aria-required="true"
+                          aria-invalid={errData.emailError !== ""}
+                          aria-describedby={errData.emailError ? "email-error" : undefined}
+                          disabled={isSubmitting}
+                        />
+                        <FormIcon name="gmail" />
+                      </div>
+                      <ErrorBox message={errData.emailError} id="email-error" />
                     </div>
-                    <ErrorBox message={errData.messageError} id="message-error" />
-                  </div>
-                </AnimatedWrapper>
+                  </AnimatedWrapper>
 
-                <AnimatedWrapper delay={0.4}>
-                  <button 
-                    type="submit"
-                    className={`btn-primary w-full group ${
-                      isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
-                    aria-label="Submit contact form"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (
-                      <span className="flex items-center justify-center gap-3">
-                        <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white"></div>
-                        Sending Message...
-                      </span>
-                    ) : (
-                      <span className="flex items-center justify-center gap-3">
-                        Send Message
-                        <span className="scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out">
-                          <Submit />
+                  <AnimatedWrapper delay={0.3}>
+                    <div className="space-y-2 flex-1 flex flex-col">
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                        Your Message *
+                      </label>
+                      <div className="relative flex-1 flex flex-col">
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="Tell me about your project, question, or just say hello..."
+                          rows="6"
+                          className={`form-input pl-12 resize-none flex-1 ${
+                            errData.messageError !== "" ? "border-red-400 focus:border-red-400" : "border-pink-200 dark:border-purple-600 focus:border-pink-400 dark:focus:border-purple-400"
+                          }`}
+                          value={formData.message}
+                          onChange={handleChange}
+                          aria-required="true"
+                          aria-invalid={errData.messageError !== ""}
+                          aria-describedby={errData.messageError ? "message-error" : undefined}
+                          disabled={isSubmitting}
+                        />
+                        <FormIcon name="chat" />
+                      </div>
+                      <ErrorBox message={errData.messageError} id="message-error" />
+                    </div>
+                  </AnimatedWrapper>
+
+                  <AnimatedWrapper delay={0.4}>
+                    <button 
+                      type="submit"
+                      className={`btn-primary w-full group ${
+                        isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                      }`}
+                      aria-label="Submit contact form"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (
+                        <span className="flex items-center justify-center gap-3">
+                          <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white"></div>
+                          Sending Message...
                         </span>
-                      </span>
-                    )}
-                  </button>
-                </AnimatedWrapper>
-              </form>
+                      ) : (
+                        <span className="flex items-center justify-center gap-3">
+                          Send Message
+                          <span className="scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out">
+                            <Submit />
+                          </span>
+                        </span>
+                      )}
+                    </button>
+                  </AnimatedWrapper>
+                </form>
+              </div>
             </div>
           </AnimatedWrapper>
         </div>
