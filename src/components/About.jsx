@@ -73,7 +73,7 @@ const About = () => {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600 dark:text-gray-400">CGPA:</span>
-                        <span className="font-medium text-purple-600 dark:text-purple-400">8.86</span>
+                        <span className="font-medium text-purple-600 dark:text-purple-400">9.40</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600 dark:text-gray-400">CodeChef Rating:</span>
