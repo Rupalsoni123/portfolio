@@ -114,19 +114,19 @@ const Contact = () => {
           </AnimatedWrapper>
         )}
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Contact Information */}
           <AnimatedWrapper animateFrom="left">
             <div className="content-card h-full flex flex-col">
               <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text mb-6">
                 Get In Touch
               </h3>
-              <div className="flex-1 flex flex-col justify-between">
+              <div className="flex-1 flex flex-col">
                 <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
                   I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply connect with fellow tech enthusiasts. Whether you have a question about DevOps, want to discuss a potential collaboration, or just want to say hello, I'd love to hear from you!
                 </p>
                 
-                <div className="space-y-6">
+                <div className="space-y-6 flex-1 flex flex-col justify-end">
                   <div className="flex items-center gap-4 p-4 bg-pink-50 dark:bg-gray-700 rounded-xl">
                     <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center">
                       <GMail className="text-white" />
@@ -249,7 +249,7 @@ const Contact = () => {
                           id="message"
                           name="message"
                           placeholder="Tell me about your project, question, or just say hello..."
-                          className={`form-input pl-12 resize-none flex-1 min-h-[120px] ${
+                          className={`form-input pl-12 resize-none flex-1 min-h-[140px] ${
                             errData.messageError !== "" ? "border-red-400 focus:border-red-400" : "border-pink-200 dark:border-purple-600 focus:border-pink-400 dark:focus:border-purple-400"
                           }`}
                           value={formData.message}

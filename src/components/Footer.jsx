@@ -8,41 +8,41 @@ import AnimatedWrapper from "./ui/AnimatedWrapper";
 const Footer = () => {
   const year = new Date().getFullYear().toString();
   return (
-    <div className="bg-gradient-to-t from-blue-200 via-blue-100 to-gray-100 dark:from-black dark:via-black dark:to-gray-700 w-full text-gray-700 dark:text-gray-300">
-      <div className="section pb-5">
+    <div className="bg-gradient-to-t from-blue-200 via-blue-100 to-gray-100 dark:from-black dark:via-black dark:to-gray-700 w-full text-gray-700 dark:text-gray-300 footer-divider">
+      <div className="max-w-screen-lg px-4 xs:px-8 md:px-12 mx-auto py-12">
         <div className="flex flex-wrap justify-between">
-          <div className="w-full sm:w-3/5 lg:w-2/5 pr-2 mb-6 lg:mb-0">
+          <div className="w-full sm:w-3/5 lg:w-2/5 pr-2 mb-4 lg:mb-0">
             <AnimatedWrapper>
               <div className="p-2">
-                <h3 className="text-gray-800 dark:text-white text-[1.75rem] font-bold pb-2 flex items-center">
-                  <span className="w-1.5 h-8 bg-cyan-500 rounded-full mr-3"></span>
+                <h3 className="text-gray-800 dark:text-white text-xl font-bold pb-2 flex items-center">
+                  <span className="w-1.5 h-6 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mr-3"></span>
                   Rupal Soni
                 </h3>
-                <p className="text-lg text-cyan-600 dark:text-cyan-400 pb-5 font-semibold">DevOps Engineer</p>
-                <div className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <p>Thank you for visiting My Portfolio.</p>
-                  <p>You can connect with me over socials.</p>
-                  <p>Have any Suggestions? Type it above.</p>
+                <p className="text-base text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text pb-3 font-semibold">DevOps Engineer</p>
+                <div className="space-y-1 text-gray-700 dark:text-gray-300 text-sm">
+                  <p>Thank you for visiting my portfolio.</p>
+                  <p>Connect with me over socials.</p>
+                  <p>Have suggestions? Feel free to reach out.</p>
                 </div>
               </div>
             </AnimatedWrapper>
           </div>
           
-          <div className="w-full xs:w-2/5 sm:w-2/5 lg:w-[30%] sm:pl-20 lg:pl-12 justify-start mb-6 lg:mb-0">
+          <div className="w-full xs:w-2/5 sm:w-2/5 lg:w-[30%] sm:pl-16 lg:pl-8 justify-start mb-4 lg:mb-0">
             <AnimatedWrapper>
               <div className="p-2">
-                <h3 className="text-gray-800 dark:text-white text-[1.35rem] xs:text-2xl font-bold pb-4 flex items-center">
-                  <span className="w-1.5 h-6 bg-cyan-500 rounded-full mr-3"></span>
+                <h3 className="text-gray-800 dark:text-white text-lg font-bold pb-3 flex items-center">
+                  <span className="w-1.5 h-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mr-3"></span>
                   Quick Links
                 </h3>
                 <nav aria-label="Quick navigation links">
                   {navLinks.map(({ link, id }) => {
                     return (
-                      <div key={id} className="group w-fit px-3 mb-2">
-                        <Link to={link} smooth duration={500} className="focus:outline-none focus:ring-2 focus:ring-cyan-500 rounded">
-                          <div className="flex items-center justify-between w-fit gap-2 font-medium text-gray-800 dark:text-white cursor-pointer">
+                      <div key={id} className="group w-fit px-2 mb-1">
+                        <Link to={link} smooth duration={500} className="focus:outline-none focus:ring-2 focus:ring-pink-500 rounded">
+                          <div className="flex items-center justify-between w-fit gap-2 font-medium text-gray-800 dark:text-white cursor-pointer text-sm">
                             <ArrowRightLong />
-                            <span className="bg-clip-text bg-gradient-to-r from-cyan-500 via-cyan-500 to-blue-500 group-hover:text-transparent duration-500 group-hover:animate-pulse link-hover">
+                            <span className="bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 group-hover:text-transparent duration-500 group-hover:animate-pulse link-hover">
                               {link}
                             </span>
                           </div>
@@ -58,15 +58,15 @@ const Footer = () => {
           <div className="w-full xs:w-3/5 sm:w-full lg:w-[30%] lg:pl-0">
             <AnimatedWrapper>
               <div className="p-2">
-                <h3 className="text-gray-800 dark:text-white text-2xl font-bold pb-4 flex items-center">
-                  <span className="w-1.5 h-6 bg-cyan-500 rounded-full mr-3"></span>
+                <h3 className="text-gray-800 dark:text-white text-lg font-bold pb-3 flex items-center">
+                  <span className="w-1.5 h-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mr-3"></span>
                   Contact Info
                 </h3>
-                <div className="flex flex-col sm:flex-row lg:flex-col gap-5 xs:gap-10 sm:gap-5 md:gap-10 justify-between">
-                  <div className="text-[0.9rem] font-medium">
-                    <p className="flex items-center gap-3 mb-3 text-gray-700 dark:text-gray-300">
+                <div className="flex flex-col sm:flex-row lg:flex-col gap-3 xs:gap-6 sm:gap-3 md:gap-6 justify-between">
+                  <div className="text-sm font-medium">
+                    <p className="flex items-center gap-3 mb-2 text-gray-700 dark:text-gray-300">
                       <GMail />
-                      <a href="mailto:rupalsoni518@gmail.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                      <a href="mailto:rupalsoni518@gmail.com" className="hover:text-pink-600 dark:hover:text-pink-400 transition-colors">
                         rupalsoni518@gmail.com
                       </a>
                     </p>
@@ -75,12 +75,12 @@ const Footer = () => {
                       <span className="pt-1">Udaipur, Rajasthan, India</span>
                     </p>
                   </div>
-                  <ul className="flex items-center gap-5 md:gap-8 lg:gap-4 justify-start" aria-label="Social media links">
+                  <ul className="flex items-center gap-3 md:gap-4 lg:gap-3 justify-start" aria-label="Social media links">
                     {contactInfo.map(({ id, link, name, icon, download }) => {
                       return (
                         <li
                           key={id}
-                          className="group relative w-10 h-10 flex justify-center items-center rounded-full p-1 cursor-pointer duration-[450ms] transition ease-in hover:scale-110 focus:scale-110 active:scale-110 bg-gray-700 dark:bg-gray-700 hover:bg-cyan-600 dark:hover:bg-cyan-600 text-white"
+                          className="group relative w-8 h-8 flex justify-center items-center rounded-full p-1 cursor-pointer duration-[450ms] transition ease-in hover:scale-110 focus:scale-110 active:scale-110 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white"
                         >
                           <a
                             href={link}
@@ -88,7 +88,7 @@ const Footer = () => {
                             target="_blank"
                             rel="noferrer"
                             aria-label={name}
-                            className="flex items-center justify-center w-full h-full"
+                            className="flex items-center justify-center w-full h-full text-xs"
                           >
                             {icon}
                           </a>
@@ -105,10 +105,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="section py-2 font-medium">
+      <div className="max-w-screen-lg px-4 xs:px-8 md:px-12 mx-auto py-3 font-medium border-t border-gray-300 dark:border-gray-600">
         <div className="">
           <AnimatedWrapper animateFrom="bottom">
-            <p className="text-sm text-gray-700 dark:text-gray-300 flex justify-center items-center">
+            <p className="text-xs text-gray-700 dark:text-gray-300 flex justify-center items-center">
               <span className="px-1 pb-[0.2rem]">
                 <CopyRight />
               </span>
@@ -117,7 +117,8 @@ const Footer = () => {
           </AnimatedWrapper>
         </div>
       </div>
-    </div>  );
+    </div>
+  );
 };
 
 export default Footer;
