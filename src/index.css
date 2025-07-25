@@ -116,6 +116,27 @@
 @layer components {
   .section {
     @apply flex flex-col w-full h-full max-w-screen-lg px-4 xs:px-8 md:px-12 mx-auto py-20;
+    position: relative;
+  }
+  
+  /* Fade any potential section separators */
+  .section::before,
+  .section::after {
+    display: none !important;
+  }
+  
+  /* Remove any borders from main sections */
+  main > * {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  /* Fade any hr elements */
+  hr {
+    opacity: 0.1 !important;
+    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.05) 50%, transparent 100%) !important;
+    height: 1px !important;
+    border: none !important;
   }
 
   .form-input {
@@ -422,6 +443,25 @@
   
   .dark .section-divider::after {
     display: none;
+  }
+  
+  /* Global page divider fade - remove any sharp section transitions */
+  body, main, section, div {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  /* Fade any box shadows that might look like dividers */
+  * {
+    box-shadow: none !important;
+  }
+  
+  .content-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .content-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
   }
   
   /* Skills filter horizontal layout */
