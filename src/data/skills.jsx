@@ -1,539 +1,305 @@
-
-import ReactJs, { Bash, Bootstrap, C, Canva, CPlusPlus, CSS, Docker, ExpressJS, FireBase, Git, GitHub, Heroku, HTML, Java, JQuery, JS, Kotlin, Kubernets, MaterialUI, MongoDB, MySQL, NextJs, NodeJS, PHP, PostGreSql, PostMan, Python, Redux, TailwindCSS, TS, VSCode ,Redis, AWS, Ansible, Kafka, DBeaver, GithubActions, Gitlab, Grafana, Jira, Serverless, Nginx, RabbitMQ, SonarQube, Terraform} from "../components/SkilIcons";
-
+import ReactJs, { Bash, Bootstrap, C, CPlusPlus, CSS, Docker, ExpressJS, Git, GitHub, AzureIcon, HTML, Java, Prometheus, JS, Kubernetes, TerragruntLogo, MongoDB, MySQL, NextJs, NodeJS, PostGreSql, Python, TailwindCSS, VSCode, AWS, Ansible, Kafka, GithubActions, Grafana, Jira, Serverless, Nginx, Terraform, Jenkins } from "../components/SkilIcons";
 
 const skills = [
+    // Cloud Platforms
     {
         id: 1,
-        icon: <HTML />,
-        name: "HTML",
+        icon: <AWS />,
+        name: "AWS",
         style: {
-            shadow: "shadow-[#ca4828]",
-            cover: "from-black to-[#ca4828]  rounded-b-md",
+            shadow: "shadow-[#FF9902]",
+            cover: "from-black to-[#FF9902] rounded-b-md",
             opacity: "opacity-80"
         }
     },
     {
         id: 2,
-        icon: <CSS />,
-        name: "CSS",
+        icon: <AzureIcon />,
+        name: "Azure",
         style: {
-            shadow: "shadow-[#1d64c7]",
-            cover: "from-black to-[#1d64c7] rounded-b-md",
+            shadow: "shadow-[#0078D4]",
+            cover: "from-black to-[#0078D4] rounded-b-md",
             opacity: "opacity-80"
         }
     },
+
+    // Infrastructure as Code
     {
         id: 3,
-        icon: <JS />,
-        name: "JS",
+        icon: <Terraform />,
+        name: "Terraform",
         style: {
-            shadow: "shadow-[#ffda53]",
-            cover: "from-black to-[#ffda53] rounded-b-md",
+            shadow: "shadow-[#5C4EE5]",
+            cover: "from-black to-[#5C4EE5] rounded-b-md",
             opacity: "opacity-80"
         }
     },
     {
         id: 4,
-        icon: <TS />,
-        name: "TS",
+        icon: <TerragruntLogo />,
+        name: "Terragrunt",
         style: {
-            shadow: "shadow-[#3481d3]",
-            cover: "from-black to-[#3481d3] rounded-b-md",
+            shadow: "shadow-[#5C4EE5]",
+            cover: "from-black to-[#5C4EE5] rounded-b-md",
             opacity: "opacity-80"
         }
     },
     {
         id: 5,
-        icon: <MongoDB />,
-        name: "MongoDB",
+        icon: <Serverless />,
+        name: "Serverless",
         style: {
-            shadow: "shadow-[#4FAA41]",
-            cover: "from-black to-[#4FAA41] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    // {
-    //     id: 6,
-    //     icon: <ExpressJS />,
-    //     name: "Express Js",
-    //     style: {
-    //         shadow: "shadow-[#444444]",
-    //         cover: "from-black to-[#444444] rounded-b-md",
-    //         opacity: "opacity-80"
-    //     }
-    // },
-
-    // {
-    //     id: 7,
-    //     icon: <ReactJs />,
-    //     name: "React",
-    //     style: {
-    //         shadow: "shadow-[#61DAFB]",
-    //         cover: "from-black to-[#61DAFB] rounded-b-md",
-    //         opacity: "opacity-80"
-    //     }
-    // },
-
-    // {
-    //     id: 8,
-
-    //     icon: <NodeJS />,
-    //     name: "Node Js",
-    //     style: {
-    //         shadow: "shadow-[#83CD27]",
-    //         cover: "from-black to-[#83CD27] rounded-b-md",
-    //         opacity: "opacity-80"
-    //     }
-    // },
-    // {
-    //     id: 9,
-    //     icon: <NextJs />,
-    //     name: "NextJs",
-    //     style: {
-    //         shadow: "shadow-[#646464]",
-    //         cover: "from-black to-[#646464] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    // {
-    //     id: 10,
-    //     icon: <TailwindCSS />,
-    //     name: "Tailwind",
-    //     style: {
-    //         shadow: "shadow-[#3D8FC6]",
-    //         cover: "from-black to-[#3D8FC6] rounded-b-md",
-    //         opacity: "opacity-80"
-    //     }
-    // },
-    // {
-    //     id: 11,
-    //     icon: <Bootstrap />,
-    //     name: "Bootstrap",
-    //     style: {
-    //         shadow: "shadow-[#6610F2]",
-    //         cover: "from-black to-[#6610F2] rounded-b-md",
-    //         opacity: "opacity-80"
-    //     }
-    // },
-    // {
-    //     id: 12,
-    //     icon: <SASS />,
-    //     name: "SASS",
-    //     style: {
-    //         shadow: "shadow-[#CC6699]",
-    //         cover: "from-black to-[#CC6699] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    // {
-    //     id: 13,
-    //     icon: <MaterialUI />,
-    //     name: "MaterialUI",
-    //     style: {
-    //         shadow: "shadow-[#1266A9]",
-    //         cover: "from-black to-[#1266A9] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    {
-        id: 14,
-        icon: <MySQL />,
-        name: "MySQL",
-        style: {
-            shadow: "shadow-[#00618A]",
-            cover: "from-black to-[#00618A] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    {
-        id: 33,
-        icon: <PostGreSql />,
-        name: "PostgreSql",
-        style: {
-            shadow: "shadow-[#336791]",
-            cover: "from-black to-[#336791] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    // {
-    //     id: 15,
-    //     icon: <FireBase />,
-    //     name: "Firebase",
-    //     style: {
-    //         shadow: "shadow-[#d49a35]",
-    //         cover: "from-black to-[#d49a35] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    {
-        id: 16,
-        icon: <Git />,
-        name: "Git",
-        style: {
-            shadow: "shadow-[#F34F29]",
-            cover: "from-black to-[#F34F29] rounded-b-md",
+            shadow: "shadow-[#FD5750]",
+            cover: "from-black to-[#FD5750] rounded-b-md",
             opacity: "opacity-80"
         }
     },
+
+    // Containerization & Orchestration
     {
-        id: 17,
-        icon: <GitHub />,
-        name: "GitHub",
-        style: {
-            shadow: "shadow-[#5c5a5a]",
-            cover: "from-black to-[#5c5a5a] rounded-b-md",
-            opacity: "opacity-80"
-        }
-    },
-    // {
-    //     id: 18,
-    //     icon: <PHP />,
-    //     name: "PHP",
-    //     style: {
-    //         shadow: "shadow-[#9597c8]",
-    //         cover: "from-black to-[#9597c8] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    {
-        id: 19,
-        icon: <CPlusPlus />,
-        name: "C++",
-        style: {
-            shadow: "shadow-[#004482]",
-            cover: "from-black to-[#004482] rounded-b-md",
-            opacity: "opacity-80"
-        }
-    },
-    {
-        id: 20,
-        icon: <Python />,
-        name: "Python",
-        style: {
-            shadow: "shadow-[#ddbe4e]",
-            cover: "from-black to-[#ddbe4e] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    // {
-    //     id: 21,
-    //     icon: <Java />,
-    //     name: "Java",
-    //     style: {
-    //         shadow: "shadow-[#E76F00]",
-    //         cover: "from-black to-[#E76F00] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    // {
-    //     id: 22,
-    //     icon: <C />,
-    //     name: "C",
-    //     style: {
-    //         shadow: "shadow-[#3949AB]",
-    //         cover: "from-black to-[#3949AB] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    // {
-    //     id: 23,
-    //     icon: <Kotlin />,
-    //     name: "Kotlin",
-    //     style: {
-    //         shadow: "shadow-[#B14F97]",
-    //         cover: "from-black to-[#B14F97] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    // {
-    //     id: 24,
-    //     icon: <CSharp />,
-    //     name: "C#",
-    //     style: {
-    //         shadow: "shadow-[#A179DC]",
-    //         cover: "from-black to-[#A179DC] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    {
-        id: 25,
-        icon: <VSCode />,
-        name: "VS Code",
-        style: {
-            shadow: "shadow-[#1D95E5]",
-            cover: "from-black to-[#1D95E5] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    {
-        id: 26,
-        icon: <Bash />,
-        name: "Bash",
-        style: {
-            shadow: "shadow-[#4dbc85]",
-            cover: "from-black to-[#4dbc85] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    {
-        id: 27,
-        icon: <Redis />,
-        name: "Redis",
-        style: {
-            shadow: "shadow-[#C6302B]",
-            cover: "from-black to-[#C6302B] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    // {
-    //     id: 28,
-    //     icon: <Redux />,
-    //     name: "Redux",
-    //     style: {
-    //         shadow: "shadow-[#764ABC]",
-    //         cover: "from-black to-[#764ABC] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    {
-        id: 29,
-        icon: <PostMan />,
-        name: "PostMan",
-        style: {
-            shadow: "shadow-[#FF6C37]",
-            cover: "from-black to-[#FF6C37] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    // {
-    //     id: 30,
-    //     icon: <JQuery />,
-    //     name: "JQuery",
-    //     style: {
-    //         shadow: "shadow-[#1266A9]",
-    //         cover: "from-black to-[#1266A9] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-    {
-        id: 31,
+        id: 6,
         icon: <Docker />,
         name: "Docker",
         style: {
             shadow: "shadow-[#0091E2]",
             cover: "from-black to-[#0091E2] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
     {
-        id: 32,
-        icon: <Kubernets />,
-        name: "Kubernets",
+        id: 7,
+        icon: <Kubernetes />,
+        name: "Kubernetes",
         style: {
             shadow: "shadow-[#326DE6]",
             cover: "from-black to-[#326DE6] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
-    // {
-    //     id: 34,
-    //     icon: <Canva />,
-    //     name: "Canva",
-    //     style: {
-    //         shadow: "shadow-[#430098]",
-    //         cover: "from-black to-[#430098] rounded-b-md",
-    //         opacity: "opacity-80"
 
-    //     }
-    // },
-    // {
-    //     id: 35,
-    //     icon: <DotNet />,
-    //     name: "DotNet Core",
-    //     style: {
-    //         shadow: "shadow-[#430098]",
-    //         cover: "from-black to-[#430098] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
+    // CI/CD & Automation
     {
-        id: 36,
-        icon: <AWS />,
-        name: "AWS",
+        id: 8,
+        icon: <GithubActions />,
+        name: "GitHub Actions",
         style: {
-            shadow: "shadow-[#FF9902]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
+            shadow: "shadow-[#2088FF]",
+            cover: "from-black to-[#2088FF] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
     {
-        id: 37,
+        id: 9,
+        icon: <Jenkins />,
+        name: "Jenkins",
+        style: {
+            shadow: "shadow-[#D33833]",
+            cover: "from-black to-[#D33833] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 10,
         icon: <Ansible />,
         name: "Ansible",
         style: {
-            shadow: "shadow-[#FFFFFF]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
+            shadow: "shadow-[#EE0000]",
+            cover: "from-black to-[#EE0000] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
+
+    // Monitoring & Observability
     {
-        id: 38,
-        icon: <Kafka />,
-        name: "Kafka",
+        id: 11,
+        icon: <Prometheus />,
+        name: "Prometheus",
         style: {
-            shadow: "shadow-[#AEDADD]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
+            shadow: "shadow-[#E6522C]",
+            cover: "from-black to-[#E6522C] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
     {
-        id: 39,
-        icon: <DBeaver />,
-        name: "DBeaver",
-        style: {
-            shadow: "shadow-[#887363]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    {
-        id: 40,
-        icon: <GithubActions />,
-        name: "GH Actions",
-        style: {
-            shadow: "shadow-[#2188FF]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    {
-        id: 41,
-        icon: <Gitlab />,
-        name: "Gitlab",
-        style: {
-            shadow: "shadow-[#FCA326]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    {
-        id: 42,
+        id: 12,
         icon: <Grafana />,
         name: "Grafana",
         style: {
-            shadow: "shadow-[#F15A2A]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
+            shadow: "shadow-[#F46800]",
+            cover: "from-black to-[#F46800] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
+
+    // Programming Languages
     {
-        id: 43,
-        icon: <Jira />,
-        name: "Jira",
+        id: 13,
+        icon: <Python />,
+        name: "Python",
         style: {
-            shadow: "shadow-[#2784FF]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
+            shadow: "shadow-[#3776AB]",
+            cover: "from-black to-[#3776AB] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
     {
-        id: 44,
-        icon: <Serverless />,
-        name: "Serverless",
+        id: 14,
+        icon: <CPlusPlus />,
+        name: "C++",
         style: {
-            shadow: "shadow-[#FD5750]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
+            shadow: "shadow-[#00599C]",
+            cover: "from-black to-[#00599C] rounded-b-md",
             opacity: "opacity-80"
-
         }
     },
     {
-        id: 45,
+        id: 15,
+        icon: <C />,
+        name: "C",
+        style: {
+            shadow: "shadow-[#A8B9CC]",
+            cover: "from-black to-[#A8B9CC] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Databases
+    {
+        id: 16,
+        icon: <MySQL />,
+        name: "MySQL",
+        style: {
+            shadow: "shadow-[#4479A1]",
+            cover: "from-black to-[#4479A1] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 17,
+        icon: <PostGreSql />,
+        name: "PostgreSQL",
+        style: {
+            shadow: "shadow-[#336791]",
+            cover: "from-black to-[#336791] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 18,
+        icon: <MongoDB />,
+        name: "MongoDB",
+        style: {
+            shadow: "shadow-[#47A248]",
+            cover: "from-black to-[#47A248] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Web Technologies
+    {
+        id: 19,
+        icon: <ReactJs />,
+        name: "React",
+        style: {
+            shadow: "shadow-[#61DAFB]",
+            cover: "from-black to-[#61DAFB] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 20,
+        icon: <NodeJS />,
+        name: "Node.js",
+        style: {
+            shadow: "shadow-[#339933]",
+            cover: "from-black to-[#339933] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 21,
+        icon: <HTML />,
+        name: "HTML5",
+        style: {
+            shadow: "shadow-[#E34F26]",
+            cover: "from-black to-[#E34F26] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 22,
+        icon: <CSS />,
+        name: "CSS3",
+        style: {
+            shadow: "shadow-[#1572B6]",
+            cover: "from-black to-[#1572B6] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 23,
+        icon: <Bootstrap />,
+        name: "Bootstrap",
+        style: {
+            shadow: "shadow-[#7952B3]",
+            cover: "from-black to-[#7952B3] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Version Control & Development Tools
+    {
+        id: 24,
+        icon: <Git />,
+        name: "Git",
+        style: {
+            shadow: "shadow-[#F05032]",
+            cover: "from-black to-[#F05032] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 25,
+        icon: <GitHub />,
+        name: "GitHub",
+        style: {
+            shadow: "shadow-[#181717]",
+            cover: "from-black to-[#181717] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 26,
+        icon: <VSCode />,
+        name: "VS Code",
+        style: {
+            shadow: "shadow-[#007ACC]",
+            cover: "from-black to-[#007ACC] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Additional Tools
+    {
+        id: 27,
+        icon: <Bash />,
+        name: "Bash",
+        style: {
+            shadow: "shadow-[#4EAA25]",
+            cover: "from-black to-[#4EAA25] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 28,
         icon: <Nginx />,
         name: "Nginx",
         style: {
-            shadow: "shadow-[#039900]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
+            shadow: "shadow-[#009639]",
+            cover: "from-black to-[#009639] rounded-b-md",
             opacity: "opacity-80"
-
         }
-    },
-    {
-        id: 46,
-        icon: <RabbitMQ />,
-        name: "RabbitMQ",
-        style: {
-            shadow: "shadow-[#FF6602]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
-            opacity: "opacity-80"
+    }
+];
 
-        }
-    },
-    {
-        id: 47,
-        icon: <SonarQube />,
-        name: "SonarQube",
-        style: {
-            shadow: "shadow-[#549DD0]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    {
-        id: 48,
-        icon: <Terraform />,
-        name: "Terraform",
-        style: {
-            shadow: "shadow-[#5C4EE5]",
-            cover: "from-black to-[#326DE6] rounded-b-md",
-            opacity: "opacity-80"
-
-        }
-    },
-    // {
-    //     id: 49,
-    //     icon: <Jenkins />,
-    //     name: "Terraform",
-    //     style: {
-    //         shadow: "shadow-[#231F20]",
-    //         cover: "from-black to-[#326DE6] rounded-b-md",
-    //         opacity: "opacity-80"
-
-    //     }
-    // },
-
-]
 export default skills;
-

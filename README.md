@@ -1,66 +1,87 @@
-# DevFolio : My Personal Portfolio
+# Rupal Soni - DevOps Engineer Portfolio
 
-> This is My [Personal Portfolio](https://dhawal-793-portfolio.onrender.com)
+## 👨‍💻 About Me
 
----
+Aspiring DevOps Engineer based in Udaipur, India, currently working as Jr. DevOps Engineer at GKMIT Ltd. Passionate about streamlining workflows, embracing cloud-native technologies, and building resilient, scalable infrastructure that empowers development teams to deliver faster and more reliably.
 
-<h2 align="left">&#x1f4c8; Repo Stats:</h2>
+I am a results-driven DevOps Engineer with a passion for automating infrastructure, scaling cloud-native applications, and optimizing CI/CD workflows. With hands-on experience across AWS, Azure, Kubernetes, Docker, and Terraform. Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 8.86, I have gained practical experience through real-world projects, certifications (RHCSA), and continuous learning in competitive programming and system design.
 
-- ![GitHub stars](https://img.shields.io/github/stars/dhawal-793/dhawal-793.github.io)
-- ![GitHub forks](https://img.shields.io/github/forks/dhawal-793/dhawal-793.github.io)
-- [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/dhawal-793/dhawal-793.github.io/commits/main)
-- [![Website shields.io](https://img.shields.io/badge/website-up-green)](http://dhawal-793.github.io/)
+## 🚀 Portfolio Overview
 
----
+This portfolio website is built with:
+- React.js
+- Tailwind CSS
+- Vite.js
 
-<h2 align="left"> 🖥️ Tech Stack</h2>
-<p>
+## 🛠️ Key Skills
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=plastic&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=plastic&logo=vite&logoColor=white)
-![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=plastic&logo=render&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=plastic&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=plastic&logo=github&logoColor=white)
+- **Cloud Platforms**: AWS, Azure
+- **Container Orchestration**: Kubernetes, Docker
+- **Infrastructure as Code**: Terraform, Terragrunt, AWS CDK, Serverless Framework
+- **CI/CD & Automation**: GitHub Actions, Jenkins, Ansible
+- **Monitoring & Observability**: Prometheus, Grafana, Mimir, Alertmanager, Uptime Kuma, ELK Stack
+- **Programming Languages**: C, C++, Python, MySQL, PostgreSQL
+- **Web Technologies**: HTML5, CSS3, React, NodeJS, Bootstrap
+- **Data Pipeline**: Apache Airflow
+- **Database Systems**: MongoDB, SingleStore, PostgreSQL, MySQL
+- **Operating Systems**: Linux
+- **Networking**: TCP/IP, DHCP, Routing, Troubleshooting
 
-</p>
+## 📜 Certifications
 
----
+- Red Hat Certified System Administrator (RHCSA) - Red Hat
+- Mastering Data Structure and Algorithms - NPTEL
+- Frontend Web Development - Coursera
+- SQL - Upgrade
+- Competitive Programming with C++ - Cranes
 
-<h2 align="left">📋 Website Preview:</h2>
+## 🏆 Achievements
 
-<p align="center"> 
-    <a href="https://dhawal-793-portfolio.onrender.com" target="_blank">
-    <img width="85%" src="https://user-images.githubusercontent.com/88284372/229130400-0eb4907c-9b23-4886-ae4b-b8161b86f66c.png" alt="Dhawal's Personal Portfolio">
-  </a>
-</p>
+- Solved 1100+ Problems on LeetCode
+- Solved 700+ Problems on GeeksforGeeks
+- CodeChef Max Rating: 1497
+- Competitive Programming Lead in Google Developer Student Club (GDSC)
 
----
+## 🔗 Quick Links
 
-<h2 align="left">📋 Features:</h2>
+- [View All Projects](./PROJECTS.md)
+- [Detailed Skills](./SKILLS.md)
+- [Contact Information](./CONTACT.md)
 
-⚡️ Fully Responsive\
-⚡️ Build Using `ReactJs`\
-⚡️ Styles using `Tailwind CSS`\
-⚡️ Typing animation using `React Type Animation`\
-⚡️ Bundled using `Vite Js`\
-⚡️ Easy to modify
+## 🚀 Getting Started
 
+### Prerequisites
+- Node.js
+- npm or pnpm
 
+### Installation
 
----
+1. Clone the repository
+   ```bash
+   git clone https://github.com/rupalsoni123/rupal_portfolio.git
+   ```
 
-<h2 align="left">🔗 Connect with me:</h2>
+2. Install dependencies
+   ```bash
+   cd rupal_portfolio
+   pnpm install
+   ```
 
-<p align=center>
-    <a href="mailto:vijaydhawal9000@gmail.com" target="blank">
-        <img src="https://img.shields.io/badge/Gmail-D14836?style=plastic&logo=gmail&logoColor=white" alt="Gmail">
-    </a>
-    <a href="https://linkedin.com/in/dhawal-vijayvargiya-188683214" target="blank">
-        <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn">
-    </a>
-    <a href="https://t.me/DV_793" target="_blank">
-        <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=plastic&logo=telegram&logoColor=white" alt="Telegram">
-    </a>
+3. Run the development server
+   ```bash
+   pnpm dev
+   ```
 
-</p>
+4. Build for production
+   ```bash
+   pnpm build
+   ```
+
+## 📞 Contact
+
+Feel free to reach out for collaborations or just a chat!
+- Email: rupalsoni518@gmail.com
+- Phone: +91 9351813445
+- LinkedIn: [linkedin.com/in/rupal-soni-ba2754228](https://linkedin.com/in/rupal-soni-ba2754228)
+- GitHub: [github.com/rupalsoni123](https://github.com/rupalsoni123)
+- Portfolio: [rupal-portfolio.vercel.app](https://rupal-portfolio.vercel.app)

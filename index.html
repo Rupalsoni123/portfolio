@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicons/favicon-16x16.png"
-    />
-    <link rel="icon" type="image/png" href="favicons/favicon.ico" />
-    <link rel="manifest" href="favicons/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Dhawal Vijayvargiya" />
-    <meta
-      name="description"
-      content="This is Rupal's Portfolio website to showcase his skills, experience, and knowledge, You can view his skills & achievements here."
-    />
-    <meta
-      name="keywords"
-      content="Rupal, Rupal Soni, Rupal's portfolio, rupal-soni"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="#00fdfd"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#000000"
-    />
-    <meta
-      name="robots"
-      content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-    />
 
-    <meta property="og:title" content="=Rupal's Personal Portfolio" />
-    <meta property="og:url" content="https://portfolio.thedhruv.online" />
-    <meta
-      property="og:description"
-      content="Rupal's Portfolio website to showcase his skills, experience, and knowledge, You can view his skills & achievements here."
-    />
-    <meta property="og:image" content="/images/preview-image.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="hi_IN" />
-    <link rel="canonical" href="https://portfolio.thedhruv.online" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" href="favicons/favicon.ico" />
+  <link rel="manifest" href="favicons/site.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Rupal Soni" />
+  <meta name="description"
+    content="This is Rupal's Portfolio website to showcase her skills, experience, and knowledge in DevOps, Cloud Computing, and Infrastructure Automation. View her skills & achievements here." />
+  <meta name="keywords" content="Rupal, Rupal Soni, Rupal's portfolio, DevOps Engineer, AWS, Azure, Kubernetes, Docker, Terraform, Cloud Computing" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#00fdfd" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
-    <title>Rupal's Personal Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <meta property="og:title" content="Rupal's Portfolio - DevOps Engineer" />
+  <meta property="og:url" content="https://rupal-portfolio.vercel.app" />
+  <meta property="og:description"
+    content="Rupal's Portfolio website to showcase her skills, experience, and knowledge in DevOps, Cloud Computing, and Infrastructure Automation. You can view her skills & achievements here." />
+  <meta property="og:image" content="/images/preview-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="hi_IN" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rupal's Portfolio - DevOps Engineer" />
+  <meta name="twitter:description" content="Rupal's Portfolio website to showcase her skills, experience, and knowledge in DevOps, AWS, Azure, Kubernetes, and more." />
+  <meta name="twitter:image" content="/images/preview-image.png" />
+  <meta name="twitter:creator" content="@rupal-portfolio" />
+  
+  <link rel="canonical" href="https://rupal-portfolio.vercel.app/" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <title>Rupal's Portfolio - DevOps Engineer</title>
+  
+  <!-- Structured Data for Personal Profile -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rupal Soni",
+      "jobTitle": "Jr. DevOps Engineer",
+      "url": "https://rupal-portfolio.vercel.app",
+      "sameAs": [
+        "https://linkedin.com/in/rupal-soni-ba2754228",
+        "https://github.com/rupalsoni123"
+      ],
+      "knowsAbout": ["DevOps", "AWS", "Azure", "Kubernetes", "Docker", "Terraform", "Database Migration", "Competitive Programming"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Udaipur",
+        "addressRegion": "Rajasthan",
+        "addressCountry": "India"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "GKMIT Ltd."
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Techno India NJR Institute of Technology"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

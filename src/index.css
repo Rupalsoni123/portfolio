@@ -1,70 +1,389 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&font-display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap&font-display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap&font-display=swap");
 
 @tailwind base;
-
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  /* Works on Firefox */
+  /* Custom scrollbar with elegant colors */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #ff0011;
-    scrollbar-track-color: #009ac3;
+    scrollbar-color: var(--scrollbar-thumb, #ec4899);
+    scrollbar-track-color: var(--scrollbar-track, #fdf2f8);
   }
-  /* Works on Chrome, Edge, and Safari */
+
   *::-webkit-scrollbar {
     width: 8px;
   }
+
   *::-webkit-scrollbar-track {
-    background: #009ac3;
+    background: var(--scrollbar-track, #fdf2f8);
   }
+
   *::-webkit-scrollbar-thumb {
-    background-color: #ff0011;
-    /* background-image: linear-gradient(to bottom, #9fe2f9, #006eff) !important; */
-    /* border-radius: 20px; */
-    /* border: 3px solid orange; */
+    background-color: var(--scrollbar-thumb, #ec4899);
+    border-radius: 4px;
+  }
+
+  /* Light mode scrollbar colors - elegant pink/purple theme */
+  .light {
+    --scrollbar-thumb: #ec4899;
+    --scrollbar-track: #fdf2f8;
+  }
+
+  /* Dark mode scrollbar colors - sophisticated purple */
+  .dark {
+    --scrollbar-thumb: #c084fc;
+    --scrollbar-track: #1e1b4b;
   }
 
   html {
-    font-family: "Raleway", sans-serif;
+    font-family: "Inter", "Poppins", sans-serif;
+    scroll-behavior: smooth;
   }
-  body{
+
+  body {
     --xposition: calc(100vw - 28px);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
+
   .animate-menu {
     transform-origin: var(--xposition) 38px;
   }
+
   .animatedHeading {
     width: fit-content;
     background-clip: text;
-    background-image: linear-gradient(
-      45deg,
-      #09deff,
-      #22d3ee,
-      #3983f5,
-      #0066ff
-    );
-    background-size: 150%;
-    animation: customAnimation 2s ease-in-out 0s infinite alternate;
+    background-image: linear-gradient(45deg,
+        #ec4899,
+        #f472b6,
+        #c084fc,
+        #a855f7,
+        #8b5cf6);
+    background-size: 200%;
+    animation: customAnimation 3s ease-in-out 0s infinite alternate;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
   }
+
   @keyframes customAnimation {
     0% {
       background-position: left;
+    }
+    50% {
+      background-position: center;
     }
     100% {
       background-position: right;
     }
   }
+  
+  /* Enhanced focus styles for accessibility */
+  a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px solid #ec4899;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  
+  /* Elegant heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+    font-family: "Playfair Display", serif;
+  }
+  
+  /* Body text with better readability */
+  p, span, div {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Screen reader only utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 }
 
 @layer components {
   .section {
-    @apply flex flex-col  w-full h-full max-w-screen-lg px-2 xs:px-10 md:px-16 mx-auto py-16;
+    @apply flex flex-col w-full h-full max-w-screen-lg px-4 xs:px-8 md:px-12 mx-auto py-20;
   }
+
   .form-input {
-    @apply pt-[0.65rem] pb-[0.4rem] px-10 bg-transparent border-2 rounded-md placeholder-shown:border-gray-400 placeholder:text-gray-500 text-white focus:outline-none w-full focus:text-white focus:border-white;
+    @apply pt-3 pb-3 px-4 bg-white dark:bg-gray-800 border-2 rounded-lg 
+           border-pink-200 dark:border-purple-600 
+           placeholder:text-gray-500 dark:placeholder:text-gray-400
+           text-gray-800 dark:text-white focus:outline-none w-full 
+           focus:border-pink-400 dark:focus:border-purple-400
+           transition-all duration-300 shadow-sm focus:shadow-md;
+  }
+  
+  /* Elegant card styles */
+  .content-card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 
+           transition-all duration-300 hover:shadow-xl hover:-translate-y-1
+           border border-pink-100 dark:border-purple-800;
+  }
+  
+  /* Beautiful gradient buttons */
+  .btn-primary {
+    @apply px-8 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
+           text-white font-semibold rounded-lg transition-all duration-300 
+           hover:shadow-lg hover:shadow-pink-500/25 hover:scale-105
+           focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 
+           active:scale-95 relative overflow-hidden;
+  }
+  
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .btn-primary:hover::before {
+    left: 100%;
+  }
+  
+  /* Section heading with elegant styling */
+  .section-heading {
+    @apply border-l-4 border-gradient-to-b from-pink-500 to-purple-600 pl-4 
+           font-bold text-gray-800 dark:text-white relative;
+    border-image: linear-gradient(to bottom, #ec4899, #8b5cf6) 1;
+  }
+  
+  /* Sophisticated background gradients */
+  .bg-gradient-elegant-light {
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 25%, #fbcfe8 50%, #f3e8ff 75%, #ede9fe 100%);
+  }
+  
+  .bg-gradient-elegant-dark {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 25%, #4c1d95 50%, #6b21a8 75%, #7c2d12 100%);
+  }
+  
+  /* Light mode with elegant pink/purple theme */
+  .light {
+    --bg-primary: #fdf2f8;      /* Pink-50 */
+    --bg-secondary: #fce7f3;    /* Pink-100 */
+    --bg-tertiary: #fbcfe8;     /* Pink-200 */
+    --text-primary: #1f2937;    /* Gray-800 */
+    --text-secondary: #4b5563;  /* Gray-600 */
+    --accent-primary: #ec4899;  /* Pink-500 */
+    --accent-secondary: #8b5cf6; /* Purple-500 */
+    --border-color: #f3e8ff;    /* Purple-50 */
+  }
+  
+  /* Dark mode with sophisticated purple theme */
+  .dark {
+    --bg-primary: #1e1b4b;      /* Indigo-900 */
+    --bg-secondary: #312e81;    /* Indigo-800 */
+    --bg-tertiary: #4c1d95;     /* Purple-800 */
+    --text-primary: #f8fafc;    /* Slate-50 */
+    --text-secondary: #cbd5e1;  /* Slate-300 */
+    --accent-primary: #c084fc;  /* Purple-400 */
+    --accent-secondary: #f472b6; /* Pink-400 */
+    --border-color: #4c1d95;    /* Purple-800 */
+  }
+  
+  /* Override backgrounds with elegant theme */
+  .light .bg-white {
+    background-color: var(--bg-primary) !important;
+  }
+  
+  .light .bg-gray-100 {
+    background-color: var(--bg-secondary) !important;
+  }
+  
+  .light .bg-gray-200 {
+    background-color: var(--bg-tertiary) !important;
+  }
+  
+  .light .text-gray-900 {
+    color: var(--text-primary) !important;
+  }
+  
+  .light .text-gray-800 {
+    color: var(--text-primary) !important;
+  }
+  
+  .light .text-gray-700 {
+    color: var(--text-secondary) !important;
+  }
+  
+  .light .text-gray-600 {
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Elegant gradient overrides */
+  .light .from-white {
+    --tw-gradient-from: var(--bg-primary) !important;
+  }
+  
+  .light .to-white {
+    --tw-gradient-to: var(--bg-primary) !important;
+  }
+  
+  .light .via-white {
+    --tw-gradient-via: var(--bg-primary) !important;
+  }
+  
+  .light .to-gray-200 {
+    --tw-gradient-to: var(--bg-tertiary) !important;
+  }
+  
+  .light .from-gray-200 {
+    --tw-gradient-from: var(--bg-tertiary) !important;
+  }
+  
+  /* Enhanced form styling */
+  .light .form-input {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-color: #f3e8ff;
+  }
+  
+  .light .form-input:focus {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+  }
+  
+  /* Elegant link styles with hover effects */
+  .link-hover {
+    @apply relative transition-all duration-300;
+  }
+  
+  .link-hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ec4899, #8b5cf6);
+    transition: width 0.3s ease;
+  }
+  
+  .link-hover:hover::after {
+    width: 100%;
+  }
+  
+  /* Floating animation for cards */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Subtle pulse animation for important elements */
+  .pulse-soft {
+    animation: pulseSoft 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulseSoft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  /* Elegant fade-in animation */
+  .fade-in-elegant {
+    animation: fadeInElegant 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInElegant {
+    from { 
+      opacity: 0; 
+      transform: translateY(30px) scale(0.95); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0) scale(1); 
+    }
+  }
+  
+  /* Glassmorphism effect */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .glass-effect {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Elegant skill card styling */
+  .skill-card {
+    @apply relative overflow-hidden rounded-xl transition-all duration-300 
+           hover:scale-105 hover:shadow-xl cursor-pointer;
+  }
+  
+  .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+  }
+  
+  .skill-card:hover::before {
+    transform: translateX(100%);
+  }
+  
+  /* Professional avatar styling */
+  .avatar-professional {
+    @apply relative overflow-hidden rounded-full;
+    box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.2), 0 0 0 8px rgba(139, 92, 246, 0.1);
+  }
+  
+  .avatar-professional::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ec4899, #8b5cf6, #6366f1);
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Subtle animations for sections */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }

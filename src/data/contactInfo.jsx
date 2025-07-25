@@ -5,13 +5,13 @@ const contactInfo = [
     {
         id: 1,
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/rupal-soni-ba2754228/",
+        link: "https://linkedin.com/in/rupal-soni-ba2754228",
         icon: <LinkedIn />,
     },
     {
         id: 2,
         name: "GitHub",
-        link: "https://github.com/Rupalsoni123",
+        link: "https://github.com/rupalsoni123",
         icon: <GitHub />,
     },
     {
@@ -24,7 +24,7 @@ const contactInfo = [
     // {
     //     id: 4,
     //     name: "Telegram",
-    //     link: "https://t.me/DV_793",
+    //     link: "",
     //     icon: <Telegram />,
     // },
     {
