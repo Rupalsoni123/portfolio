@@ -376,7 +376,29 @@
     to { transform: rotate(360deg); }
   }
   
-  /* Section divider line - more subtle and faded */
+  /* Filter category divider line - slightly more visible than section dividers */
+  .filter-divider {
+    position: relative;
+  }
+  
+  .filter-divider::before {
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.15) 25%, rgba(139, 92, 246, 0.25) 50%, rgba(236, 72, 153, 0.15) 75%, transparent 100%);
+    opacity: 0.6;
+  }
+  
+  .dark .filter-divider::before {
+    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.2) 25%, rgba(244, 114, 182, 0.3) 50%, rgba(192, 132, 252, 0.2) 75%, transparent 100%);
+    opacity: 0.5;
+  }
+  
+  /* Section divider line - more faded and subtle */
   .section-divider {
     position: relative;
   }
@@ -387,15 +409,15 @@
     bottom: -2rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
+    width: 50%;
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.1) 30%, rgba(139, 92, 246, 0.2) 50%, rgba(236, 72, 153, 0.1) 70%, transparent 100%);
-    opacity: 0.6;
+    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.05) 35%, rgba(139, 92, 246, 0.1) 50%, rgba(236, 72, 153, 0.05) 65%, transparent 100%);
+    opacity: 0.4;
   }
   
   .dark .section-divider::after {
-    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.15) 30%, rgba(244, 114, 182, 0.25) 50%, rgba(192, 132, 252, 0.15) 70%, transparent 100%);
-    opacity: 0.5;
+    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.08) 35%, rgba(244, 114, 182, 0.15) 50%, rgba(192, 132, 252, 0.08) 65%, transparent 100%);
+    opacity: 0.3;
   }
   
   /* Skills filter horizontal layout */

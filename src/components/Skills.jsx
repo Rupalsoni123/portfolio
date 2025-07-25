@@ -71,7 +71,7 @@ const Skills = () => {
 
         {/* Elegant Category Filter */}
         <AnimatedWrapper delay={0.2}>
-          <div className="mb-12">
+          <div className="mb-12 filter-divider">
             <div className="glass-effect rounded-2xl p-6 backdrop-blur-sm">
               <h3 className="text-lg font-semibold text-center mb-6 text-gray-800 dark:text-white">
                 Filter by Category
