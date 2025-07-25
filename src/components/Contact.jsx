@@ -294,7 +294,7 @@ const Contact = () => {
             </div>
           </AnimatedWrapper>
         </div>
-          {/* Contact Information */}
+          {/* Contact Information
           <AnimatedWrapper animateFrom="left">
             <div className="h-full flex flex-col">
               <div className="content-card flex-1">
@@ -348,10 +348,10 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </AnimatedWrapper>
+          </AnimatedWrapper> */}
 
           {/* Contact Form */}
-          <AnimatedWrapper animateFrom="right">
+          {/* <AnimatedWrapper animateFrom="right">
             <div className="h-full flex flex-col">
               <div className="content-card flex-1">
                 <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text mb-6">
@@ -473,8 +473,8 @@ const Contact = () => {
               </div>
             </div>
           </AnimatedWrapper>
-        </div>
-      
+       */}
+       </div> 
     </section>
   );
 };
