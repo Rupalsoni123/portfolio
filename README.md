@@ -4,7 +4,7 @@
 
 Aspiring DevOps Engineer based in Udaipur, India, currently working as Jr. DevOps Engineer at GKMIT Ltd. Passionate about streamlining workflows, embracing cloud-native technologies, and building resilient, scalable infrastructure that empowers development teams to deliver faster and more reliably.
 
-I am a results-driven DevOps Engineer with a passion for automating infrastructure, scaling cloud-native applications, and optimizing CI/CD workflows. With hands-on experience across AWS, Azure, Kubernetes, Docker, and Terraform. Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 8.86, I have gained practical experience through real-world projects, certifications (RHCSA), and continuous learning in competitive programming and system design.
+I am a results-driven DevOps Engineer with a passion for automating infrastructure, scaling cloud-native applications, and optimizing CI/CD workflows. With hands-on experience across AWS, Azure, Kubernetes, Docker, and Terraform. Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 9.40, I have gained practical experience through real-world projects, certifications (RHCSA), and continuous learning in competitive programming and system design.
 
 ## 🚀 Portfolio Overview
 
