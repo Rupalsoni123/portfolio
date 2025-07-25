@@ -449,16 +449,56 @@
     display: none;
   }
   
-  /* Remove ALL potential dividers and lines between sections */
-  * {
+  /* AGGRESSIVE removal of ALL dividers and lines */
+  *,
+  *::before,
+  *::after {
     border-top: none !important;
     border-bottom: none !important;
+    box-shadow: none !important;
   }
   
-  /* Restore necessary borders only for specific elements */
+  /* Remove any hr elements completely */
+  hr {
+    display: none !important;
+  }
+  
+  /* Remove section dividers completely */
+  .section-divider::after,
+  .section-divider::before {
+    display: none !important;
+    content: none !important;
+  }
+  
+  /* Remove filter dividers completely */
+  .filter-divider::before,
+  .filter-divider::after {
+    display: none !important;
+    content: none !important;
+  }
+  
+  /* Remove footer dividers completely */
+  .footer-divider::before,
+  .footer-divider::after {
+    display: none !important;
+    content: none !important;
+  }
+  
+  /* Remove any gradient lines or decorative elements */
+  .bg-gradient-to-r::after,
+  .bg-gradient-to-r::before,
+  .bg-gradient-elegant-light::after,
+  .bg-gradient-elegant-light::before,
+  .bg-gradient-elegant-dark::after,
+  .bg-gradient-elegant-dark::before {
+    display: none !important;
+    content: none !important;
+  }
+  
+  /* Restore ONLY essential borders */
   .form-input {
-    border: 2px solid !important;
-    border-color: #fce7f3 !important;
+    border: 2px solid #fce7f3 !important;
+    border-radius: 0.5rem !important;
   }
   
   .dark .form-input {
@@ -466,11 +506,13 @@
   }
   
   .content-card {
-    border: 1px solid rgba(236, 72, 153, 0.1) !important;
+    border: 1px solid rgba(236, 72, 153, 0.05) !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
   }
   
   .dark .content-card {
-    border: 1px solid rgba(139, 92, 246, 0.1) !important;
+    border-color: rgba(139, 92, 246, 0.05) !important;
   }
   
   /* Remove any lines/dividers between About and Skills sections */

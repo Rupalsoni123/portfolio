@@ -15,7 +15,6 @@ const About = () => {
         <AnimatedWrapper>
           <div className="text-center mb-16 section-divider">
             <SectionHeading heading="About Me" />
-            <div className="mt-4 w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mx-auto"></div>
           </div>
         </AnimatedWrapper>
         
