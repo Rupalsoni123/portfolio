@@ -73,12 +73,12 @@ const Skills = () => {
               <h3 className="text-lg font-semibold text-center mb-6 text-gray-800 dark:text-white">
                 Filter by Category
               </h3>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3">
                 {skillCategories.map((category, index) => (
                   <AnimatedWrapper key={category} delay={0.1 * index}>
                     <button
                       onClick={() => setActiveCategory(category)}
-                      className={`px-6 py-3 rounded-xl transition-all duration-300 font-medium text-sm ${
+                      className={`px-4 py-2 sm:px-6 sm:py-3 rounded-xl transition-all duration-300 font-medium text-xs sm:text-sm whitespace-nowrap ${
                         activeCategory === category 
                           ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white shadow-lg shadow-pink-500/25 scale-105 transform' 
                           : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-pink-50 dark:hover:bg-gray-700 hover:text-pink-600 dark:hover:text-pink-400 hover:scale-105 shadow-md border border-pink-100 dark:border-purple-800'

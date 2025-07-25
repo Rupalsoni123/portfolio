@@ -23,7 +23,7 @@ const Navbar = () => {
                     <div className='flex justify-between items-center px-5 max-w-screen-2xl mx-auto'>
                         <div className='text-[2.5rem] duration-500 font-semibold group cursor-pointer'>
                             <h1 className='animatedHeading font-signature'>
-                                <span className='text-transparent'>Vaibhav Soni</span>
+                                <span className='text-transparent'>Rupal Soni</span>
                             </h1>
                         </div>
 

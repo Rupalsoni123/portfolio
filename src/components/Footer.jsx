@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="p-2">
                 <h3 className="text-gray-800 dark:text-white text-[1.75rem] font-bold pb-2 flex items-center">
                   <span className="w-1.5 h-8 bg-cyan-500 rounded-full mr-3"></span>
-                  Vaibhav Soni
+                  Rupal Soni
                 </h3>
                 <p className="text-lg text-cyan-600 dark:text-cyan-400 pb-5 font-semibold">DevOps Engineer</p>
                 <div className="space-y-2 text-gray-700 dark:text-gray-300">
@@ -66,13 +66,13 @@ const Footer = () => {
                   <div className="text-[0.9rem] font-medium">
                     <p className="flex items-center gap-3 mb-3 text-gray-700 dark:text-gray-300">
                       <GMail />
-                      <a href="mailto:vaibhavsoni5567@gmail.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                        vaibhavsoni5567@gmail.com
+                      <a href="mailto:rupalsoni518@gmail.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                        rupalsoni518@gmail.com
                       </a>
                     </p>
                     <p className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                       <Map />
-                      <span className="pt-1">Ahmedabad, Gujarat, India</span>
+                      <span className="pt-1">Udaipur, Rajasthan, India</span>
                     </p>
                   </div>
                   <ul className="flex items-center gap-5 md:gap-8 lg:gap-4 justify-start" aria-label="Social media links">

@@ -91,7 +91,7 @@ const About = () => {
               <div className="py-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
                   <div className="flex-shrink-0">
-                    <h4 className="text-xl font-bold text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text border-l-4 border-pink-500 pl-4">
+                    <h4 className="text-xl font-bold text-transparent bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text pl-4 border-l-4 border-pink-500">
                       Technologies I Love Working With
                     </h4>
                   </div>
