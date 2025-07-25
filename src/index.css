@@ -376,26 +376,17 @@
     to { transform: rotate(360deg); }
   }
   
-  /* Footer divider line - faded line above footer */
+  /* Footer divider line - REMOVED */
   .footer-divider {
     position: relative;
   }
   
   .footer-divider::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.2) 20%, rgba(139, 92, 246, 0.3) 50%, rgba(236, 72, 153, 0.2) 80%, transparent 100%);
-    opacity: 0.7;
+    display: none;
   }
   
   .dark .footer-divider::before {
-    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.25) 20%, rgba(244, 114, 182, 0.35) 50%, rgba(192, 132, 252, 0.25) 80%, transparent 100%);
-    opacity: 0.6;
+    display: none;
   }
   
   /* Filter category divider line - slightly more visible than section dividers */
@@ -420,26 +411,17 @@
     opacity: 0.5;
   }
   
-  /* Section divider line - more visible and consistent across all sections */
+  /* Section divider line - REMOVED */
   .section-divider {
     position: relative;
   }
   
   .section-divider::after {
-    content: '';
-    position: absolute;
-    bottom: -2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.3) 25%, rgba(139, 92, 246, 0.4) 50%, rgba(236, 72, 153, 0.3) 75%, transparent 100%);
-    opacity: 0.8;
+    display: none;
   }
   
   .dark .section-divider::after {
-    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.4) 25%, rgba(244, 114, 182, 0.5) 50%, rgba(192, 132, 252, 0.4) 75%, transparent 100%);
-    opacity: 0.7;
+    display: none;
   }
   
   /* Skills filter horizontal layout */
