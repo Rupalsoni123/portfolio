@@ -1,4 +1,4 @@
-import ReactJs, { Bash, Bootstrap, C, CPlusPlus, CSS, Docker, ExpressJS, Airflow, Git, GitHub, AzureIcon, HTML, Java, Prometheus, JS, Kubernetes, TerragruntLogo, MongoDB, MySQL, NextJs, NodeJS, PostGreSql, Python, TailwindCSS, VSCode, AWS, Ansible, Kafka, GithubActions, Grafana, Jira, Serverless, Nginx, Terraform, Jenkins } from "../components/SkilIcons";
+import ReactJs, { Bash, Bootstrap, C, CPlusPlus, CSS, Docker, ExpressJS, Airflow, Git, GitHub, AzureIcon, HTML, Java, Prometheus, JS, Kubernetes, TerragruntLogo, MongoDB, MySQL, NextJs, NodeJS, PostGreSql, Python, TailwindCSS, VSCode, AWS, Ansible, Kafka, GithubActions, Grafana, Jira, Serverless, Nginx, Terraform, Jenkins, RabbitMQ, SonarQube, DBeaver, Gitlab, PostMan, Redis } from "../components/SkilIcons";
 
 const skills = [
     // Cloud Platforms
@@ -308,6 +308,74 @@ const skills = [
         style: {
             shadow: "shadow-[#231F20]",
             cover: "from-black to-[#231F20] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Message Queues & Caching
+    {
+        id: 29,
+        icon: <RabbitMQ />,
+        name: "RabbitMQ",
+        style: {
+            shadow: "shadow-[#FF6600]",
+            cover: "from-black to-[#FF6600] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 30,
+        icon: <Redis />,
+        name: "Redis",
+        style: {
+            shadow: "shadow-[#DC382D]",
+            cover: "from-black to-[#DC382D] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Code Quality & Testing
+    {
+        id: 31,
+        icon: <SonarQube />,
+        name: "SonarQube",
+        style: {
+            shadow: "shadow-[#4E9BCD]",
+            cover: "from-black to-[#4E9BCD] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Database Tools
+    {
+        id: 32,
+        icon: <DBeaver />,
+        name: "DBeaver",
+        style: {
+            shadow: "shadow-[#382923]",
+            cover: "from-black to-[#382923] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+
+    // Version Control & Development Tools (Additional)
+    {
+        id: 33,
+        icon: <Gitlab />,
+        name: "GitLab",
+        style: {
+            shadow: "shadow-[#FC6D26]",
+            cover: "from-black to-[#FC6D26] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 34,
+        icon: <PostMan />,
+        name: "Postman",
+        style: {
+            shadow: "shadow-[#FF6C37]",
+            cover: "from-black to-[#FF6C37] rounded-b-md",
             opacity: "opacity-80"
         }
     }

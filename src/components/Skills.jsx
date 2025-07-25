@@ -33,7 +33,7 @@ const skillBelongsToCategory = (skill, category) => {
     case "Containers & Orchestration":
       return ["docker", "kubernetes", "helm"].some(container => name.includes(container));
     case "CI/CD & Automation":
-      return ["actions", "gitlab", "jenkins", "bitbucket", "ansible", "bash"].some(cicd => name.includes(cicd));
+      return ["actions", "gitlab", "jenkins", "bitbucket", "ansible", "bash", "sonarqube"].some(cicd => name.includes(cicd));
     case "Monitoring & Observability":
       return ["grafana", "prometheus", "elk", "cloudwatch", "monitor", "mimir", "alertmanager"].some(monitoring => name.includes(monitoring));
     case "Data & Messaging":
@@ -41,9 +41,9 @@ const skillBelongsToCategory = (skill, category) => {
     case "Programming Languages":
       return ["python", "c++", "c", "javascript", "java"].some(lang => name.includes(lang));
     case "Databases":
-      return ["sql", "mongo", "redis", "postgres", "mysql"].some(db => name.includes(db));
+      return ["sql", "mongo", "redis", "postgres", "mysql", "dbeaver"].some(db => name.includes(db));
     case "Web Technologies":
-      return ["react", "node", "html", "css", "bootstrap", "tailwind"].some(web => name.includes(web));
+      return ["react", "node", "html", "css", "bootstrap", "tailwind", "postman"].some(web => name.includes(web));
     default:
       return false;
   }
