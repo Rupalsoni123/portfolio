@@ -105,7 +105,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-lg px-4 xs:px-8 md:px-12 mx-auto py-3 font-medium border-t border-gray-300 dark:border-gray-600">
+      <div className="max-w-screen-lg px-4 xs:px-8 md:px-12 mx-auto py-3 font-medium border-t border-gray-200/30 dark:border-gray-700/20">
         <div className="">
           <AnimatedWrapper animateFrom="bottom">
             <p className="text-xs text-gray-700 dark:text-gray-300 flex justify-center items-center">

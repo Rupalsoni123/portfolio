@@ -389,7 +389,7 @@
     display: none;
   }
   
-  /* Filter category divider line - slightly more visible than section dividers */
+  /* Filter category divider line - FADED */
   .filter-divider {
     position: relative;
   }
@@ -400,15 +400,15 @@
     top: -1.5rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 40%;
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.15) 25%, rgba(139, 92, 246, 0.25) 50%, rgba(236, 72, 153, 0.15) 75%, transparent 100%);
-    opacity: 0.6;
+    background: linear-gradient(90deg, transparent 0%, rgba(236, 72, 153, 0.05) 40%, rgba(139, 92, 246, 0.08) 50%, rgba(236, 72, 153, 0.05) 60%, transparent 100%);
+    opacity: 0.3;
   }
   
   .dark .filter-divider::before {
-    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.2) 25%, rgba(244, 114, 182, 0.3) 50%, rgba(192, 132, 252, 0.2) 75%, transparent 100%);
-    opacity: 0.5;
+    background: linear-gradient(90deg, transparent 0%, rgba(192, 132, 252, 0.06) 40%, rgba(244, 114, 182, 0.1) 50%, rgba(192, 132, 252, 0.06) 60%, transparent 100%);
+    opacity: 0.2;
   }
   
   /* Section divider line - REMOVED */
