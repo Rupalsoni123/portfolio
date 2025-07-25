@@ -474,7 +474,7 @@ const Contact = () => {
             </div>
           </AnimatedWrapper>
         </div>
-      </div>
+      
     </section>
   );
 };

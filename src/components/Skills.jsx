@@ -13,6 +13,7 @@ const skillCategories = [
   "Containers & Orchestration",
   "CI/CD & Automation",
   "Monitoring & Observability",
+  "Data & Messaging",
   "Programming Languages",
   "Databases",
   "Web Technologies"
@@ -35,6 +36,8 @@ const skillBelongsToCategory = (skill, category) => {
       return ["actions", "gitlab", "jenkins", "bitbucket", "ansible", "bash"].some(cicd => name.includes(cicd));
     case "Monitoring & Observability":
       return ["grafana", "prometheus", "elk", "cloudwatch", "monitor", "mimir", "alertmanager"].some(monitoring => name.includes(monitoring));
+    case "Data & Messaging":
+      return ["airflow", "kafka", "redis", "rabbitmq", "stream", "queue", "pipeline"].some(data => name.includes(data));
     case "Programming Languages":
       return ["python", "c++", "c", "javascript", "java"].some(lang => name.includes(lang));
     case "Databases":

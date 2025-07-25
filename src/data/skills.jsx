@@ -1,4 +1,4 @@
-import ReactJs, { Bash, Bootstrap, C, CPlusPlus, CSS, Docker, ExpressJS, airflow, Git, GitHub, AzureIcon, HTML, Java, Prometheus, JS, Kubernetes, TerragruntLogo, MongoDB, MySQL, NextJs, NodeJS, PostGreSql, Python, TailwindCSS, VSCode, AWS, Ansible, Kafka, GithubActions, Grafana, Jira, Serverless, Nginx, Terraform, Jenkins } from "../components/SkilIcons";
+import ReactJs, { Bash, Bootstrap, C, CPlusPlus, CSS, Docker, ExpressJS, Airflow, Git, GitHub, AzureIcon, HTML, Java, Prometheus, JS, Kubernetes, TerragruntLogo, MongoDB, MySQL, NextJs, NodeJS, PostGreSql, Python, TailwindCSS, VSCode, AWS, Ansible, Kafka, GithubActions, Grafana, Jira, Serverless, Nginx, Terraform, Jenkins } from "../components/SkilIcons";
 
 const skills = [
     // Cloud Platforms
@@ -293,11 +293,21 @@ const skills = [
     },
         {
         id: 27,
-        icon: <airflow />,
-        name: "airflow",
+        icon: <Airflow />,
+        name: "Apache Airflow",
         style: {
-            shadow: "shadow-[#4EAA25]",
-            cover: "from-black to-[#4EAA25] rounded-b-md",
+            shadow: "shadow-[#017CEE]",
+            cover: "from-black to-[#017CEE] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+    {
+        id: 28,
+        icon: <Kafka />,
+        name: "Apache Kafka",
+        style: {
+            shadow: "shadow-[#231F20]",
+            cover: "from-black to-[#231F20] rounded-b-md",
             opacity: "opacity-80"
         }
     }
