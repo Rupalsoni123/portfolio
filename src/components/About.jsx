@@ -39,7 +39,7 @@ const About = () => {
                     
                     <AnimatedWrapper delay={0.4}>
                       <p className="text-lg">
-                        Currently pursuing <span className="text-pink-600 dark:text-pink-400 font-semibold">B.Tech in Computer Science and Engineering</span> at Techno India NJR Institute of Technology with a <span className="text-purple-600 dark:text-purple-400 font-semibold">CGPA of 8.86</span>. My academic journey is complemented by hands-on professional experience in cloud computing, infrastructure automation, and database optimization.
+                        Currently pursuing <span className="text-pink-600 dark:text-pink-400 font-semibold">B.Tech in Computer Science and Engineering</span> at Techno India NJR Institute of Technology with a <span className="text-purple-600 dark:text-purple-400 font-semibold">CGPA of 9.40</span>. My academic journey is complemented by hands-on professional experience in cloud computing, infrastructure automation, and database optimization.
                       </p>
                     </AnimatedWrapper>
                     

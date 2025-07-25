@@ -189,10 +189,14 @@
   /* Sophisticated background gradients - much dimmer for light mode */
   .bg-gradient-elegant-light {
     background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 25%, #cbd5e1 50%, #e2e8f0 75%, #f1f5f9 100%);
+    border: none !important;
+    box-shadow: none !important;
   }
   
   .bg-gradient-elegant-dark {
     background: linear-gradient(135deg, #1e1b4b 0%, #312e81 25%, #4c1d95 50%, #6b21a8 75%, #7c2d12 100%);
+    border: none !important;
+    box-shadow: none !important;
   }
   
   /* Light mode with much dimmer, eye-friendly colors */
@@ -443,6 +447,58 @@
   
   .dark .section-divider::after {
     display: none;
+  }
+  
+  /* Remove ALL potential dividers and lines between sections */
+  * {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  /* Restore necessary borders only for specific elements */
+  .form-input {
+    border: 2px solid !important;
+    border-color: #fce7f3 !important;
+  }
+  
+  .dark .form-input {
+    border-color: #7c3aed !important;
+  }
+  
+  .content-card {
+    border: 1px solid rgba(236, 72, 153, 0.1) !important;
+  }
+  
+  .dark .content-card {
+    border: 1px solid rgba(139, 92, 246, 0.1) !important;
+  }
+  
+  /* Remove any lines/dividers between About and Skills sections */
+  div[name="About"] {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  div[name="About"]::after {
+    display: none !important;
+  }
+  
+  /* Remove any top borders from Skills section */
+  div[name="Skills"] {
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 2rem !important;
+  }
+  
+  div[name="Skills"]::before {
+    display: none !important;
+  }
+  
+  /* Remove any dividers from content cards */
+  .content-card::after,
+  .content-card::before {
+    display: none !important;
   }
   
   /* Global page divider fade - remove any sharp section transitions */
