@@ -1,4 +1,4 @@
-import ReactJs, { Bash, Bootstrap, C, CPlusPlus, CSS, Docker, ExpressJS, Git, GitHub, AzureIcon, HTML, Java, Prometheus, JS, Kubernetes, TerragruntLogo, MongoDB, MySQL, NextJs, NodeJS, PostGreSql, Python, TailwindCSS, VSCode, AWS, Ansible, Kafka, GithubActions, Grafana, Jira, Serverless, Nginx, Terraform, Jenkins } from "../components/SkilIcons";
+import ReactJs, { Bash, Bootstrap, C, CPlusPlus, CSS, Docker, ExpressJS, airflow, Git, GitHub, AzureIcon, HTML, Java, Prometheus, JS, Kubernetes, TerragruntLogo, MongoDB, MySQL, NextJs, NodeJS, PostGreSql, Python, TailwindCSS, VSCode, AWS, Ansible, Kafka, GithubActions, Grafana, Jira, Serverless, Nginx, Terraform, Jenkins } from "../components/SkilIcons";
 
 const skills = [
     // Cloud Platforms
@@ -268,16 +268,7 @@ const skills = [
             opacity: "opacity-80"
         }
     },
-    {
-        id: 26,
-        icon: <VSCode />,
-        name: "VS Code",
-        style: {
-            shadow: "shadow-[#007ACC]",
-            cover: "from-black to-[#007ACC] rounded-b-md",
-            opacity: "opacity-80"
-        }
-    },
+
 
     // Additional Tools
     {
@@ -297,6 +288,16 @@ const skills = [
         style: {
             shadow: "shadow-[#009639]",
             cover: "from-black to-[#009639] rounded-b-md",
+            opacity: "opacity-80"
+        }
+    },
+        {
+        id: 27,
+        icon: <airflow />,
+        name: "airflow",
+        style: {
+            shadow: "shadow-[#4EAA25]",
+            cover: "from-black to-[#4EAA25] rounded-b-md",
             opacity: "opacity-80"
         }
     }

@@ -59,7 +59,7 @@ const Home = () => {
           </AnimatedWrapper>
           
           <AnimatedWrapper delay={0.35}>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <p className="text-xl xs:text-2xl font-semibold text-gray-700 dark:text-gray-300">
                 Jr. DevOps Engineer
               </p>
@@ -75,56 +75,57 @@ const Home = () => {
                   />
                 </span>
               </p>
-            </div>
-          </AnimatedWrapper>
-          
-          <AnimatedWrapper delay={0.45}>
-            <div className="glass-effect rounded-xl p-2 backdrop-blur-sm w-fit mx-auto">
-              <ul className="flex items-center z-40 gap-2 justify-center">
-                {contactInfo.map(({ id, link, name, icon, download }) => {
-                  return (
-                    <li
-                      key={id}
-                      className="group relative min-w-[36px] min-h-[36px] flex justify-center items-center rounded-full p-1.5 cursor-pointer duration-300 transition-all hover:scale-110 focus-within:scale-110 active:scale-95"
-                    >
-                      <a
-                        href={link}
-                        download={download}
-                        target="_blank"
-                        rel="noferrer"
-                        aria-label={name}
-                        className="flex items-center justify-center w-full h-full rounded-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-md hover:shadow-lg transition-all duration-300"
-                      >
-                        <span className="text-xs">
-                          {icon}
-                        </span>
-                      </a>
-                      <div className="flex scale-0 sm:group-hover:scale-100 group-focus-within:scale-100 transition-all ease-out duration-300 delay-100 origin-center justify-center items-center absolute z-50 -bottom-10 w-auto h-6 py-1 px-3 bg-white dark:bg-gray-800 text-xs text-gray-800 dark:text-gray-300 rounded-lg shadow-lg border border-pink-200 dark:border-purple-600">
-                        {name}
-                        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white dark:bg-gray-800 border-l border-t border-pink-200 dark:border-purple-600 rotate-45"></div>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </AnimatedWrapper>
-          
-          <AnimatedWrapper delay={0.55}>
-            <div className="py-6">
-              <Link
-                to="About"
-                smooth
-                duration={500}
-                className="btn-primary group flex items-center justify-center gap-3 w-48 relative overflow-hidden"
-              >
-                <span className="pr-6 sm:pr-0 sm:group-hover:-translate-x-2 sm:transition-transform delay-200 ease-out font-semibold">
-                  Discover More
-                </span>
-                <span className="absolute right-6 sm:scale-0 transition-all group-hover:scale-100 ease-in delay-200 animate-bounce duration-1000">
-                  <ArrowDown />
-                </span>
-              </Link>
+              
+              {/* Social Icons - Aligned above Discover More button */}
+              <div className="flex flex-col items-center gap-4">
+                <AnimatedWrapper delay={0.45}>
+                  <div className="glass-effect rounded-xl p-2 backdrop-blur-sm w-fit">
+                    <ul className="flex items-center z-40 gap-2 justify-center">
+                      {contactInfo.map(({ id, link, name, icon, download }) => {
+                        return (
+                          <li
+                            key={id}
+                            className="group relative min-w-[36px] min-h-[36px] flex justify-center items-center rounded-full p-1.5 cursor-pointer duration-300 transition-all hover:scale-110 focus-within:scale-110 active:scale-95"
+                          >
+                            <a
+                              href={link}
+                              download={download}
+                              target="_blank"
+                              rel="noferrer"
+                              aria-label={name}
+                              className="flex items-center justify-center w-full h-full rounded-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-md hover:shadow-lg transition-all duration-300"
+                            >
+                              <span className="text-xs">
+                                {icon}
+                              </span>
+                            </a>
+                            <div className="flex scale-0 sm:group-hover:scale-100 group-focus-within:scale-100 transition-all ease-out duration-300 delay-100 origin-center justify-center items-center absolute z-50 -bottom-10 w-auto h-6 py-1 px-3 bg-white dark:bg-gray-800 text-xs text-gray-800 dark:text-gray-300 rounded-lg shadow-lg border border-pink-200 dark:border-purple-600">
+                              {name}
+                              <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white dark:bg-gray-800 border-l border-t border-pink-200 dark:border-purple-600 rotate-45"></div>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </AnimatedWrapper>
+                
+                <AnimatedWrapper delay={0.55}>
+                  <Link
+                    to="About"
+                    smooth
+                    duration={500}
+                    className="btn-primary group flex items-center justify-center gap-3 w-48 relative overflow-hidden"
+                  >
+                    <span className="pr-6 sm:pr-0 sm:group-hover:-translate-x-2 sm:transition-transform delay-200 ease-out font-semibold">
+                      Discover More
+                    </span>
+                    <span className="absolute right-6 sm:scale-0 transition-all group-hover:scale-100 ease-in delay-200 animate-bounce duration-1000">
+                      <ArrowDown />
+                    </span>
+                  </Link>
+                </AnimatedWrapper>
+              </div>
             </div>
           </AnimatedWrapper>
         </div>
