@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import AnimatedWrapper from "./ui/AnimatedWrapper";
 
 import { ArrowDown } from "./Icons";
-import Avatar from "../assets/Avatars/Avatars/93f50dd8-9dec-4f20-ad88-d40acc26dec5.jpg";
+import Avatar from "../assets/Avatars/Avatar.svg";
 import contactInfo from "../data/contactInfo";
 
 const Home = () => {
