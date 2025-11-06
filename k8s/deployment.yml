@@ -13,8 +13,6 @@ spec:
       labels:
         app: portfolio-web
     spec:
-      imagePullSecrets:
-        - name: dockerhub-secret 
       containers:
         - name: web
           image: rupalsoni123/portfolio:latest   # or your-registry/portfolio:v1
