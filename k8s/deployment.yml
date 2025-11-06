@@ -15,21 +15,23 @@ spec:
     spec:
       containers:
         - name: web
-          image: rupalsoni123/portfolio:latest   # or your-registry/portfolio:v1
+          image: rupalsoni123/portfolio:1
+          imagePullPolicy: Never
           ports:
             - containerPort: 80
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 5
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 15
-            periodSeconds: 20
+          # Temporarily remove probes to verify container stability
+          # readinessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: 80
+          #   initialDelaySeconds: 5
+          #   periodSeconds: 10
+          # livenessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: 80
+          #   initialDelaySeconds: 15
+          #   periodSeconds: 20
           resources:
             requests:
               cpu: "100m"
