@@ -74,10 +74,6 @@ With <span className="text-pink-600 dark:text-pink-400 font-semibold">2+ years o
                         <span className="text-gray-600 dark:text-gray-400">CGPA:</span>
                         <span className="font-medium text-purple-600 dark:text-purple-400">9.40</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-600 dark:text-gray-400">CodeChef Rating:</span>
-                        <span className="font-medium text-pink-600 dark:text-pink-400">1497</span>
-                      </div>
                     </div>
                   </div>
                 </div>
