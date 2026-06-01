@@ -32,13 +32,13 @@ const About = () => {
                   <div className="space-y-6 text-gray-700 dark:text-gray-300 font-medium text-justify leading-relaxed">
                     <AnimatedWrapper delay={0.2}>
                       <p className="text-lg">
-                        <span className="text-pink-600 dark:text-pink-400 font-semibold">Jr. DevOps Engineer</span> based in the beautiful city of Udaipur, Rajasthan, India. Currently contributing to innovative infrastructure solutions at <span className="text-purple-600 dark:text-purple-400 font-semibold">GKMIT Ltd.</span>, where I collaborate with development teams to implement cutting-edge DevSecOps practices and build scalable, secure infrastructure solutions.
+                        <span className="text-pink-600 dark:text-pink-400 font-semibold">DevOps Engineer</span> based in the beautiful city of Udaipur, Rajasthan, India. Currently contributing to innovative infrastructure solutions at <span className="text-purple-600 dark:text-purple-400 font-semibold">SparkEighteen</span>, where I collaborate with development teams to implement cutting-edge DevSecOps practices and build scalable, secure infrastructure solutions.
                       </p>
                     </AnimatedWrapper>
                     
                     <AnimatedWrapper delay={0.4}>
                       <p className="text-lg">
-                        Currently pursuing <span className="text-pink-600 dark:text-pink-400 font-semibold">B.Tech in Computer Science and Engineering</span> at Techno India NJR Institute of Technology with a <span className="text-purple-600 dark:text-purple-400 font-semibold">CGPA of 9.40</span>. My academic journey is complemented by hands-on professional experience in cloud computing, infrastructure automation, and database optimization.
+                        Completed my <span className="text-pink-600 dark:text-pink-400 font-semibold">B.Tech in Computer Science and Engineering</span> in <span className="text-purple-600 dark:text-purple-400 font-semibold">May 2025</span> at Techno India NJR Institute of Technology with a <span className="text-purple-600 dark:text-purple-400 font-semibold">CGPA of 9.40</span>. My academic journey is complemented by hands-on professional experience in cloud computing, infrastructure automation, and database optimization.
                       </p>
                     </AnimatedWrapper>
                     
@@ -60,11 +60,11 @@ const About = () => {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600 dark:text-gray-400">Current Role:</span>
-                        <span className="font-medium">Jr. DevOps Engineer</span>
+                        <span className="font-medium">DevOps Engineer</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600 dark:text-gray-400">Company:</span>
-                        <span className="font-medium">GKMIT Ltd.</span>
+                        <span className="font-medium">SparkEighteen</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600 dark:text-gray-400">Education:</span>

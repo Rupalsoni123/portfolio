@@ -37,8 +37,8 @@ If you're interested in collaborating on a project or have any questions about m
 ## 📚 Professional Development
 
 I'm currently focused on:
-- Advancing my DevOps skills through hands-on projects at GKMIT Ltd.
-- Completing my B.Tech in Computer Science and Engineering
+- Advancing my DevOps skills through hands-on projects at SparkEighteen
+- Completed my B.Tech in Computer Science and Engineering in May 2025
 - Competitive programming and algorithm optimization
 - Learning advanced cloud-native technologies
 - Expanding knowledge in database systems and data pipeline orchestration

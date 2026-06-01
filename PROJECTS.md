@@ -1,6 +1,6 @@
 # DevOps Projects
 
-This document showcases my key DevOps and infrastructure projects based on my professional experience at GKMIT Ltd. and personal learning journey. Each project demonstrates different aspects of my skills and expertise in the DevOps ecosystem.
+This document showcases my key DevOps and infrastructure projects based on my professional experience at SparkEighteen and personal learning journey. Each project demonstrates different aspects of my skills and expertise in the DevOps ecosystem.
 
 ## 🚀 Featured Projects
 
@@ -193,10 +193,10 @@ This document showcases my key DevOps and infrastructure projects based on my pr
 | SQL | Upgrade | Current |
 | Competitive Programming with C++ | Cranes | Current |
 
-**Current Education:**
+**Education:**
 - B.Tech in Computer Science and Engineering
 - Techno India NJR Institute of Technology
-- CGPA: 8.86 (2021 - Present)
+- CGPA: 9.40 (2021 - May 2025)
 
 **Continuous Learning:**
 - Advanced DevOps practices and cloud-native technologies

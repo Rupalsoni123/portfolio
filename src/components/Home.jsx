@@ -61,7 +61,7 @@ const Home = () => {
           <AnimatedWrapper delay={0.35}>
             <div className="space-y-6">
               <p className="text-xl xs:text-2xl font-semibold text-gray-700 dark:text-gray-300">
-                Jr. DevOps Engineer
+                DevOps Engineer
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-lg xs:text-xl font-medium py-2 min-w-[16rem] xs:min-w-[28rem] max-w-[30rem]">
                 <span className="block xs:inline">Passionate about </span>
@@ -93,7 +93,7 @@ const Home = () => {
                               target="_blank"
                               rel="noferrer"
                               aria-label={name}
-                              className="flex items-center justify-center w-full h-full rounded-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-md hover:shadow-lg transition-all duration-300"
+                              className="flex items-center justify-center w-full h-full rounded-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-pink-100 dark:border-purple-700 shadow-md hover:shadow-lg hover:border-pink-300 dark:hover:border-purple-500 transition-all duration-300"
                             >
                               <span className="text-xs">
                                 {icon}

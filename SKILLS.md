@@ -1,6 +1,6 @@
 # Technical Skills
 
-This document provides a detailed breakdown of my technical skills and proficiency levels in various DevOps and cloud technologies, based on my professional experience at GKMIT Ltd. and continuous learning journey.
+This document provides a detailed breakdown of my technical skills and proficiency levels in various DevOps and cloud technologies, based on my professional experience at SparkEighteen and continuous learning journey.
 
 ## 🌐 Cloud Platforms
 
