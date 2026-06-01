@@ -44,7 +44,7 @@ const About = () => {
                     
                     <AnimatedWrapper delay={0.6}>
                       <p className="text-lg">
-                        Beyond DevOps, I'm passionate about <span className="text-pink-600 dark:text-pink-400 font-semibold">competitive programming</span> with over <span className="text-purple-600 dark:text-purple-400 font-semibold">1100+ problems solved on LeetCode</span> and <span className="text-purple-600 dark:text-purple-400 font-semibold">700+ on GeeksforGeeks</span>. As the <span className="text-pink-600 dark:text-pink-400 font-semibold">Competitive Programming Lead</span> in Google Developer Student Club (GDSC), I mentor fellow students and organize technical workshops, fostering a community of learning and innovation.
+With <span className="text-pink-600 dark:text-pink-400 font-semibold">2+ years of experience</span> building scalable cloud infrastructure, I specialize in <span className="text-purple-600 dark:text-purple-400 font-semibold">AWS, Kubernetes, Terraform, and GitHub Actions</span>. I design secure CI/CD pipelines, automate infrastructure provisioning with Terraform and Ansible, and implement centralized monitoring with <span className="text-purple-600 dark:text-purple-400 font-semibold">Grafana and Loki</span> — reducing deployment effort by <span className="text-pink-600 dark:text-pink-400 font-semibold">70–80%</span> while strengthening reliability through automated disaster recovery and OIDC-based deployment security.
                       </p>
                     </AnimatedWrapper>
                   </div>

@@ -6,18 +6,17 @@
       <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
     <style>
-      /* Light theme (default): gradient tile, white monogram */
+      /* Light theme (default): gradient tile, white letter */
       .bg { fill: url(#brand); }
       .fg { fill: #ffffff; }
-      /* Dark theme: dark tile, gradient monogram */
+      /* Dark theme: dark tile, gradient letter */
       @media (prefers-color-scheme: dark) {
         .bg { fill: #111827; }
         .fg { fill: url(#brand); }
       }
     </style>
   </defs>
-  <rect class="bg" x="2" y="2" width="60" height="60" rx="14"/>
-  <text class="fg" x="50%" y="52%" dominant-baseline="central" text-anchor="middle"
-        font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700"
-        letter-spacing="-1">RS</text>
+  <rect class="bg" x="0" y="0" width="64" height="64" rx="12"/>
+  <text class="fg" x="50%" y="54%" dominant-baseline="central" text-anchor="middle"
+        font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="800">R</text>
 </svg>
